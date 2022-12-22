@@ -5,3 +5,11 @@
 
 # - Для n=4 {1: 2, 2: 2.25, 3: 2.37, 4: 2.44}
 
+N = int(input('Введите натуральное число: '))
+num = {}
+sum_num = 0
+for n in range(1, N+1):
+    num[n] = round((1+1/n)**n, 2)
+    sum_num += num[n]
+print(num)
+print('Сумма = ', sum_num)

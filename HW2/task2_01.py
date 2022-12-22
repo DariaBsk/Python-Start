@@ -5,3 +5,13 @@
 
 # - 6782 -> 23
 # - 0,56 -> 11
+
+print("Введите число: ")
+a = input()
+sum = 0
+for i in a:
+    if i.isdigit():
+        sum += int(a)
+print(sum)
+
+
