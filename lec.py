@@ -145,4 +145,86 @@ print(text.replace('ещё', 'ЕЩЁ'))   #хотим что-то заменит
 for c in text:
     print(c)
 
-# text. нажимаем Ctrl пробел - подсказки функций: help(text.istitle) - справка от Python
+# text. нажимаем Ctrl пробел - подсказки функций: help(text.istitle) - справка от Python - help(int), help(str)
+
+# СРЕЗЫ
+for c in text:
+    print(c)
+
+text = 'съешь ещё этих мягких французских булок'
+print(text[0])                          # с
+print(text[1])                          # ъ
+print(text[len(text)])                  # IndexError
+print(text[len(text)-1])                # к
+print(text[-5])                         # 6
+print(text[:])                          # print(text) => [0:len(text)-1]
+print(text[:2])                         # cъ => [:2], [0:2]
+print(text[len(text)-2:])               # ок
+print(text[2:9])                        # ешь еще
+print(text[6:-18])                      # еще этих мягких
+print(text[0:len(text):6])              # сеикакл
+print(text[::6])                        # сеикакл
+text = text[2:9] + text[-5] + text[:2]  # 
+
+
+# СПИСКИ - пронумерованная изменяемая коллекция элементов типов
+
+numbers = [1, 2, 3 ,4, 5]
+print(numbers) # [1, 2, 3 ,4, 5]
+
+numbers = list(range(1, 6))
+print(numbers) # [1, 2, 3 ,4, 5]
+
+numbers[0] = 10
+print(numbers) # [10, 2, 3 ,4, 5]
+
+for i in numbers:
+    i *= 2
+    print(i) # [20, 4, 6, 8, 10]
+print(numbers) # [1, 2, 3 ,4, 5]
+
+# СПИСКИ: введение
+## list = list
+
+numbers = [1, 2, 3 ,4, 5]
+print(numbers) # [1, 2, 3 ,4, 5]
+ran = range(1, 6)
+print(type(ran))
+numbers = list(ran) # приведение типа ran к типу list
+print(type(numbers))
+
+print(numbers)
+numbers[0] = 10
+print(f'{len(numbers)} len')
+
+colors = ['red', 'green', 'blue']
+
+for e in colors:
+    print(e*2) # redred greengreen blueblue
+
+colors.append('gray') # добавить в конец
+print(colors == ['red', 'green', 'blue', 'gray']) # True
+colors.remove('red') # del colors[0] # удалить элемент
+del colors[0] # удалить элемент
+
+
+# ФУНКЦИИ - это фрагмент программы, используемый многократно
+
+# def function_name(x):
+    # body line 1
+    # ...
+    # body line n
+    # optional return
+
+def f(x):
+    if x == 1:
+        return 'Целое'
+    elif x == 2.3:
+        return 23
+    else:
+        return
+
+arg = 1
+print(f(arg))
+print(type(f(arg)))
+
