@@ -11,5 +11,5 @@ print('Заполняем массив элементами арифметиче
 a1 = int(input('Введите первый элемент: '))
 d = int(input('Введите разность элементов: '))
 n = int(input('Введите количество элементов: '))
-new_massiv = [a1+(i-1)*d for i in range(1,n+1)]
+new_massiv = [a1+(i-1)*d for i in range(1, n+1)]
 print(new_massiv) 

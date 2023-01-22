@@ -9,11 +9,11 @@ def ab(a,b):
     if b==1: 
         return a
     if b>1:
-        return a*ab(a,b-1)
+        return a*ab(a, b-1)
     if b==-1:
         return 1/a
     if b<-1:
-        return (1/a)*ab(a,b+1)
+        return (1/a)*ab(a, b+1)
 
 
 a=2

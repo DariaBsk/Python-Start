@@ -10,4 +10,4 @@ array = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 min = 5
 max = 15
 
-print(list(map(lambda x:x[0],[i for i in enumerate(array) if i[1]>=min and i[1]<=max])))
+print(list(map(lambda x: x[0],[i for i in enumerate(array) if i[1]>=min and i[1]<=max])))
