@@ -8,8 +8,8 @@
 
 
 print('Заполняем массив элементами арифметической прогрессии.')
-n1 = int(input('Введите первый элемент: '))
-raznost = int(input('Введите разность элементов: '))
-kolvo = int(input('Введите количество элементов: '))
-new_massiv = [n1+(i-1)*raznost for i in range(1,kolvo+1)]
+a1 = int(input('Введите первый элемент: '))
+d = int(input('Введите разность элементов: '))
+n = int(input('Введите количество элементов: '))
+new_massiv = [a1+(i-1)*d for i in range(1,n+1)]
 print(new_massiv) 
