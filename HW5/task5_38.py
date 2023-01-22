@@ -4,6 +4,7 @@ text = 'Аб абв где ежзабв, гдежз. Иклмноп абвгде
 
 new_text= text.split()
 clear_text = ''
+
 for element in new_text:
     if not 'абв' in element:
         clear_text += element + ' '

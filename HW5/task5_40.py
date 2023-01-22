@@ -37,7 +37,7 @@ print(encode(a))
 
 # def origin_data(m):
 #     coding = "" 
-#     for i in range(1, len(m) + 1, 2):
+#     for i in range(1, len(m)+1, 2):
 #         if type(m[i-1]) == int:
 #             coding += m[i]*m[i-1]
         

@@ -25,7 +25,7 @@ ost = 221
 
 def sweet_game(res, a):
     while res-a > 0:
-        print(f'Осталось {res-a} конфет. Следующий ход:')
+        print(f'Осталось {res - a} конфет. Следующий ход:')
         res = res-a
         a = int(input())
         if res <= 0:
