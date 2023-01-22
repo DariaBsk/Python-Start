@@ -3,7 +3,7 @@
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
 
-def ab(a,b):
+def ab(a, b):
     if b==0:
         return 1
     if b==1: 
@@ -18,4 +18,4 @@ def ab(a,b):
 
 a=2
 b=3
-print(ab(a,b))
+print(ab(a, b))
